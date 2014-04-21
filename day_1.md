@@ -28,7 +28,7 @@ Tom Cramer - would like solution for displaying EADs in Blacklight.
 
 ### Hadoop for repos
 
-Use cases unclear - some ideas. 
+Matt Zumwalt - Use cases unclear - some ideas. Interesting in talking.
 
 ### DevOps
 
@@ -81,4 +81,12 @@ Mark Matenzio - [https://github.com/dpla/ingestion](https://github.com/dpla/inge
 
 ### Open Planets Foundation
 
-Facilitating collaboration in a preservation community - [http://www.openplanetsfoundation.org](http://www.openplanetsfoundation.org) - [http://www.scape-project.eu](http://www.scape-project.eu)
+Facilitating collaboration in a preservation community - [http://www.openplanetsfoundation.org](http://www.openplanetsfoundation.org) - [http://www.scape-project.eu](http://www.scape-project.eu) - Planning tools: preservation watch, content profiling
+
+### ResourceSync
+
+Sitemaps to effect synchronization of resource copying. Could replace OAI-PMH. Encourages presentation of repositories as web resoruces. NISO standard - waiting on ANSI.
+
+### Capacity Planning
+
+Rosalyn Metz - Let's talk about how we get stuff in repos and what to do once it's there - moving, storing.
