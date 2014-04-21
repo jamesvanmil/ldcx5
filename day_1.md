@@ -57,3 +57,24 @@ Jim Coble - Needs to allow staff member to upload on behalf of others. Have been
 ### Spotlight
 
 Stanford demoed Spotlight with the goal of finding early adopters.
+
+### Mirador
+
+IIIF client to give direct access to objects via OpenSeadragon library. Metadata now incorporates annotations - goal to serve rich resources with annotations in a shared environment. Working with other instutions to develop plug-ins.
+
+
+### GeoMonitor
+
+Service monitoring for geodata server availibility.
+
+### Bulk ingest
+
+Mark Bussey - questions about catching errors during ingest as early as possible - trying to avoid cleaning, showing status, leveraging backgroud processing. Batch status reports. A lot of issues that don't have to do with crosswalking. What's the right way to present errors?
+
+### Linked Data for Libraries
+
+Cornell moving library catalog to Blacklight - moving library catalog data into Solr through an RDf blob. How to share data between institutions? (Harvard, Stanford) E.g., usage data, open access resources, etc. Manging RDF data with Hydra.
+
+### DPLA stack
+
+Mark Matenzio - [https://github.com/dpla/ingestion](https://github.com/dpla/ingestion)
