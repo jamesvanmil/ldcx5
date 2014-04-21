@@ -75,6 +75,10 @@ Mark Bussey - questions about catching errors during ingest as early as possible
 
 Cornell moving library catalog to Blacklight - moving library catalog data into Solr through an RDf blob. How to share data between institutions? (Harvard, Stanford) E.g., usage data, open access resources, etc. Manging RDF data with Hydra.
 
-### DPLA stack
+### DPLA stack - metadata integration
 
 Mark Matenzio - [https://github.com/dpla/ingestion](https://github.com/dpla/ingestion)
+
+### Open Planets Foundation
+
+Facilitating collaboration in a preservation community - [http://www.openplanetsfoundation.org](http://www.openplanetsfoundation.org) - [http://www.scape-project.eu](http://www.scape-project.eu)
