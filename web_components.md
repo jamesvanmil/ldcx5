@@ -15,6 +15,8 @@ By building on Blacklight, we have a fallback for browsers without Javascript.
 
 [ToDoMVC](http://todomvc.com/)
 
+[Yeoman.io](http://yeoman.io/)
+
 Dave Mosher videos: 
 * [https://www.youtube.com/watch?v=UYVcY9EJcRs](https://www.youtube.com/watch?v=UYVcY9EJcRs)
 * [https://www.youtube.com/watch?v=fSAgFxjFSqY](https://www.youtube.com/watch?v=fSAgFxjFSqY) Kinda an intro to lineman.js
