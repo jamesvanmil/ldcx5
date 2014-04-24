@@ -47,9 +47,13 @@ Run rspec to test that it works
 
 	$ rspec
 
+####Time to do some namespace isolation work:
+
 Need to name hydra_myplugin files:
 
 	$ mv hydra.myplugin.gemspec hydra-myplugin.gemspec
 
-Maniupulate the app/\*/hyrda_myplugins dirs in to app/\*/hydra/myplugins (this is important for the namespacing)
+Maniupulate the app/\*/hyrda_myplugins dirs in to app/\*/hydra/myplugins (this is important for the namespacing):
+
+	$ some bash magic
 
