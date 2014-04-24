@@ -134,5 +134,5 @@ Add Hydra module to version:
 		end
 	end
 
-# NEXT STEP: MAKE HYDRA GENERATOR??!!??!!!!
+### Next step, make a generator
 [example generator](https://github.com/Hydramata/hydramaton/blob/master/lib/generators/hydramata/plugin/plugin_generator.rb)
