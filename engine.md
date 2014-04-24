@@ -68,7 +68,7 @@ Maniupulate the app/\*/hyrda_myplugin dirs in to app/\*/hydra/myplugin (this is 
 		end
 	end
 	
-edit to establish an alias for those who aren't paying attention:
+edit to establish an alias for those who aren't paying attention to the code structure:
 
 	$ vim lib/hydra_myplugin.rb
 
@@ -81,9 +81,23 @@ engine.rb goes here:
 
 	module Hydra
 		Module Myplugin
+
+			def self.table_name_prefix
+				'hydra_myplugin_'
+			end
+
+			def self.use_relative_model_naming?
+				true
+			end
+
 			class Engine < ::Rails::Engine
-				isolate_namespace Hydra::Myplugin
+				engine_name 'hydra_myplugin'
 			end
 		end
 	end
 
+(The colons in the front above shortcuts to root when looking for the module)
+
+Because we're not using isolate_namespace, we need method declaritions to find necessary routes.
+
+Rails won't autoload second leve dependencies for Engines; so require dependencies within your engine code
