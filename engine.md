@@ -53,7 +53,37 @@ Need to name hydra_myplugin files:
 
 	$ mv hydra.myplugin.gemspec hydra-myplugin.gemspec
 
-Maniupulate the *app/\*/hyrda_myplugin* dirs in to *app/\*/hydra/myplugin* (this is important for the namespacing):
+Maniupulate the app/\*/hyrda_myplugin dirs in to app/\*/hydra/myplugin (this is important for the namespacing):
 
 	$ some bash magic, or do it the hard way like a prole
+
+	$ vim app/controllers/hydra/myplugin/application_controller.rb
+	s/HydraMyplugin/Hydra::Myplugin/
+
+	$ vim lib/hydra-myplugin.rb
+	require"hydra/myplugin/engine"
+
+	module Hydra
+		module Myplugin
+		end
+	end
+	
+edit to establish an alias for those who aren't paying attention:
+
+	$ vim lib/hydra_myplugin.rb
+
+	require hydra_myplugin
+
+engine.rb goes here:
+
+	$ mkdir lib/hydra/myplugin
+	$ vim lib/hydra/myplugin/engine.rb
+
+	module Hydra
+		Module Myplugin
+			class Engine < ::Rails::Engine
+				isolate_namespace Hydra::Myplugin
+			end
+		end
+	end
 
