@@ -49,6 +49,8 @@ Run rspec to test that it works
 
 ####Time to do some namespace isolation work:
 
+Edit namespaces in gemspec
+
 Need to name hydra_myplugin files:
 
 	$ mv hydra.myplugin.gemspec hydra-myplugin.gemspec
@@ -92,12 +94,14 @@ engine.rb goes here:
 
 			class Engine < ::Rails::Engine
 				engine_name 'hydra_myplugin'
+
 				initializer 'hydra-myplugin.initializer' do |app|
 					app.config.paths.add 'app/services', eager_load: true  ##these two lines will autofind services
 					app.config.autoload_paths += %W(
 						#{config.root}/app/services
 					)
 				end
+
 			end
 		end
 	end
@@ -108,4 +112,24 @@ Because we're not using isolate_namespace, we need method declaritions to find n
 
 Rails won't autoload second leve dependencies for Engines; so require dependencies within your engine code
 
+Yay we have an engine!
 
+Two types or rake tasks: ones for working on the engine, and some that the parent application can use.
+
+Can also have custom generators; curate has one for creating works
+
+Remove RDoc black from Rakefile
+
+Add to gemspec:
+
+	s.add_development_dependency 'yard'
+
+Add Hydra module to version:
+
+	$ vim lib/hydra/myplugin/version.rb
+
+	module Hydra
+		module Myplugin
+			VERSION = "0.0.1"
+		end
+	end
