@@ -136,3 +136,5 @@ Add Hydra module to version:
 
 ### Next step, make a generator
 [example generator](https://github.com/Hydramata/hydramaton/blob/master/lib/generators/hydramata/plugin/plugin_generator.rb)
+
+You need a rails application to test your engine. Engine Cart rebuilds the rails app with the engine for you. [Github](https://github.com/cbeer/engine_cart)
