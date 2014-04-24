@@ -30,4 +30,9 @@ Namespace isolation will be complicated
 For Hydra, will have to replace MIT license with Apache, replace rdoc with md, add rspec to gemspec:
 
 	s.add_development_dependency "rspec-rails"
+	# git init ##etc... omitting futher notes about git
 	$ bundle install
+
+Wire up rspec stuff:
+
+	$ rspec --init 
