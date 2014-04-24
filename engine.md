@@ -9,7 +9,7 @@ Would like to see Hydra::Engine.new (to handle conventions of Hydra engines)
 
 Jeremy has a hydramaton plugin_generator.rb - good place to extract what we want.
 
-It's a convention for rails plugins to have a namesapce, but this behavior isn't available by default:
+It's a convention for rails plugins to have a namespace, but this behavior isn't available by default:
 
 	Hydra::MyPlugin
 
