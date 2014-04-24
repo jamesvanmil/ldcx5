@@ -92,6 +92,12 @@ engine.rb goes here:
 
 			class Engine < ::Rails::Engine
 				engine_name 'hydra_myplugin'
+				initializer 'hydra-myplugin.initializer' do |app|
+					app.config.paths.add 'app/services', eager_load: true  ##these two lines will autofind services
+					app.config.autoload_paths += %W(
+						#{config.root}/app/services
+					)
+				end
 			end
 		end
 	end
@@ -101,3 +107,5 @@ engine.rb goes here:
 Because we're not using isolate_namespace, we need method declaritions to find necessary routes.
 
 Rails won't autoload second leve dependencies for Engines; so require dependencies within your engine code
+
+
