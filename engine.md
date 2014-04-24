@@ -133,3 +133,6 @@ Add Hydra module to version:
 			VERSION = "0.0.1"
 		end
 	end
+
+# NEXT STEP: MAKE HYDRA GENERATOR??!!??!!!!
+[example generator](https://github.com/Hydramata/hydramaton/blob/master/lib/generators/hydramata/plugin/plugin_generator.rb)
